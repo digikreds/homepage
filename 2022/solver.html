@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="da-DK">
+  <head>
+    <meta charset="utf-8" />
+    <title>En lille hjælper</title>
+<style>
+html {
+  max-width: 70ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 3em 0 1em;
+}
+
+p,ul,ol {
+  margin-bottom: 2em;
+  color: #1d1d1d;
+  font-family: sans-serif;
+}
+
+.main { width: 65ch; margin: 0 auto;}
+</style>
+  </head>
+  <body>
+    <div class="main">
+      <p>
+        Denne løser kender til en række bøger, som den kan løse bog-koder for. Indtast nedenfor ISSN
+        nummeret for bogen, og upload en PDF af den kodede besked. 
+      </p>
+      <form id="solver" action="https://digikreds.dk/2022/1845274336594385/solution.pdf">
+        <label for="issn">Bogens ISSN Nummer</label>
+        <input id="issn" name="issn" type="text" placeholder="ISSN Nummer" /><br />
+        <label for="message">Upload PDF</label>
+        <input id="message" name="message" type="file" /><br />
+
+        <input type="submit" value="Løs" />
+      </form>
+      <p id="error"><br /></p>
+    </div>
+
+<script>
+var element = document.getElementById("solver")
+element.addEventListener("submit", function(evt) {
+  evt.preventDefault();
+  var issn = document.getElementById("issn").value
+  issn = issn.trim()
+  if(issn === "1603-4074"){
+    element.submit()
+  } else {
+    document.getElementById("error").textContent = "Vi kender desværre ikke den bog"
+    window.setTimeout(function(){
+      document.getElementById("error").textContent = ""
+    }, 6000)
+  }
+}, true);
+</script>
+  </body>
+</html>
