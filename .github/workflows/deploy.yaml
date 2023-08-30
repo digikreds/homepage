@@ -30,7 +30,7 @@ jobs:
       - name: Make ready
         run: |
           mkdir dist
-          cp index.html CNAME dist/
+          cp index.htm CNAME dist/
       - name: Build 2022
         run: |
           cp -r ./2022 dist/
@@ -39,6 +39,7 @@ jobs:
           cd 2023
           npm install
           npm run build-only -- --outDir ../dist/2023
+          cp ../dist/2023/index.html ../dist/2023/404.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
