@@ -39,7 +39,7 @@ jobs:
           cd 2023
           npm install
           npm run build-only -- --outDir ../dist/2023
-          cp ../dist/2023/index.html ../dist/2023/404.html
+          cp ../dist/2023/index.html ../dist/404.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
