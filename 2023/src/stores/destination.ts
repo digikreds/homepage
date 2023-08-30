@@ -44,6 +44,7 @@ export const useDestinationStore = defineStore('destination', () => {
   const list = ref(destination_list)
   const index = ref(0)
   const currentDestination = computed(() => list.value[index.value].dest.coord)
+  const currentInfo = computed(() => list.value[index.value].dest.info)
   function nextDestination() {
     list.value[index.value].visited = new Date()
 
@@ -52,5 +53,5 @@ export const useDestinationStore = defineStore('destination', () => {
     index.value++
   }
   
-  return { list, index, currentDestination, nextDestination }
+  return { list, index, currentInfo, currentDestination, nextDestination }
 })

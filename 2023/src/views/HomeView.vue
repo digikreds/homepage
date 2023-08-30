@@ -74,7 +74,7 @@ var are_we_there = computed(() => {
 })
 
 function nextDestination(){
-  alert(destination.info)
+  alert(destination.currentInfo)
   destination.nextDestination()
 }
 
