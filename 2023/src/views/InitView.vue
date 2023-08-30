@@ -1,14 +1,25 @@
 <script setup lang="ts">
+import { useDestinationStore } from '@/stores/destination'
 
 var urlParams = new URLSearchParams(window.location.search);
 for(var parameter of urlParams.entries()){
   var key = parameter[0];
   var value = parameter[1]
-  var cookie = `${key}=${value}; Path=/; max-age=172800; SameSite=lax; Secure;`
-  document.cookie = cookie;
+  localStorage.setItem(key, value)
 }
 
+/*
+var urlParams = new URLSearchParams(window.location.search);
+const route = urlParams.get("route")
+app.provide('route', route)
+*/
+
 // Do redirect
+
+import { useRouter } from 'vue-router'
+const router = useRouter();
+
+router.push({path: '/'})
 </script>
 <template>
   <div class="loader">

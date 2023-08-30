@@ -28,7 +28,9 @@ jobs:
       - name: Setup pages
         uses: actions/configure-pages@v3
       - name: Make ready
-        run: mkdir dist
+        run: |
+          mkdir dist
+          cp index.html CNAME dist/
       - name: Build 2022
         run: |
           cp -r ./2022 dist/
