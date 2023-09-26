@@ -1,0 +1,71 @@
+{
+  "trips": [
+    {
+      "teamName": "morten",
+      "tour": [
+        {
+          "comment": " // For enden af vejen",
+          "type": "location",
+          "position": [55.83586804837251, 12.270102782277808],
+          "accuracy": 1,
+          "info": "Flot, næste!"
+        },
+        {
+          "comment": " // Ved huset",
+          "type": "location",
+          "position": [55.83636084800567, 12.270125653891546],
+          "accuracy": 1,
+          "info": "Færdig!"
+        }
+      ]
+    },
+    {
+      "teamName": "nicolai",
+      "tour": [
+        {
+          "comment": " // Huset",
+          "type": "location",
+          "position": [55.842562197746624, 12.425962888091409],
+          "accuracy": 10,
+          "info": "<b>TADA</b> Så er vi igang 🎉"
+        },
+        {
+          "type": "code",
+          "code": "aGVqbWVkZGln",
+          "info": "Go go go"
+        },
+        {
+          "comment": " // Skolevej",
+          "type": "location",
+          "position": [55.842241038500816, 12.42550192368334],
+          "accuracy": 1,
+          "info": "Flot, næste!"
+        }
+      ]
+    },
+    {
+      "teamName": "kobenhavn",
+      "tour": [
+        {
+          "comment": " // Rosenborg",
+          "type": "location",
+          "position": [55.68556650775494, 12.577473486625404],
+          "accuracy": 1,
+          "info": "Så er vi igang"
+        },
+        {
+          "type": "code",
+          "code": "aGVqbWVkZGln",
+          "info": "Go go go"
+        },
+        {
+          "comment": " // KBH Lufthavn",
+          "type": "location",
+          "position": [55.617791985253035, 12.649298745974447],
+          "accuracy": 1,
+          "info": "Flot, næste!"
+        }
+      ]
+    }
+  ]
+}

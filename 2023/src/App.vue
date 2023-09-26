@@ -1,31 +1,50 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+
+import {useGameStore } from '@/stores/game'
+import { ref } from 'vue';
+
+const game = useGameStore()
+
+const confirmationDialog = ref(false)
+
+function advanceTrip(){
+  game.AdvanceTrip()
+  confirmationDialog.value = false
+}
+
 </script>
 
 <template>
   <v-card>
     <v-layout>
-      <v-navigation-drawer location="right" expand-on-hover rail>
-        <v-list>
-          <v-list-item
-            prepend-avatar="https://randomuser.me/api/portraits/women/81.jpg"
-            title="Jane Smith"
-            subtitle="SOME WHERE MYSTERIOS BUT USEFUL INFO" ></v-list-item>
-        </v-list>
-
-        <v-divider></v-divider>
-
-        <v-list density="compact" nav >
-          <v-list-item prepend-icon="mdi-home-city" title="Home" value="home"></v-list-item>
-          <v-list-item prepend-icon="mdi-account" title="My Account" value="account"></v-list-item>
-          <v-list-item prepend-icon="mdi-account-group-outline" title="Users" value="users"></v-list-item>
-        </v-list>
-      </v-navigation-drawer>
       <v-main style="min-height: 99vh">
         <router-view></router-view>
       </v-main>
+      <v-bottom-navigation>
+        <v-btn 
+          v-if="game.currentStepActivation.Activated"
+          @click="confirmationDialog = true">Næste Post!</v-btn>
+      </v-bottom-navigation>
     </v-layout>
   </v-card>
+
+  <v-dialog
+    v-model="confirmationDialog"
+    width = "auto"
+  >
+    <v-card>
+      <v-card-title class="text-h5">Er du sikker?</v-card-title>
+      <v-card-text>
+        Du kan ikke gå tilbage og se denne information igen
+      </v-card-text>
+      <v-card-actions>
+        <v-spacer></v-spacer>
+        <v-btn color="primary" @click="advanceTrip">Gå videre</v-btn>
+        <v-btn @click="confirmationDialog = false">Tilbage</v-btn>
+      </v-card-actions>
+    </v-card>
+  </v-dialog>
 </template>
 
 <style scoped>

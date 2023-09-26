@@ -1,20 +1,4 @@
-<script setup lang="ts">
-import { useRouter } from 'vue-router'
-const router = useRouter();
 
-var urlParams = new URLSearchParams(window.location.search);
-for(var parameter of urlParams.entries()){
-  var key = parameter[0];
-  var value = parameter[1]
-  localStorage.setItem(key, value)
-}
-
-// Do redirect
-
-setTimeout(() => {
-  router.push({path: '/'})
-}, 2000)
-</script>
 <template>
   <div class="loader">
       <svg class="w-screen h-screen" viewbox="0 0 210 297">
@@ -76,15 +60,14 @@ setTimeout(() => {
          </path>
       </svg>
     </div>
-    
 </template>
 
-<style>
-      svg {
-        fill: currentColor;
-      }
-    
-      .loader {
-        color: #003255;
-      }
-    </style>
+<style scoped>
+  svg {
+    fill: currentColor;
+  }
+
+  .loader {
+    color: #003255;
+  }
+</style>
