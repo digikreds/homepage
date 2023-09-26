@@ -1,7 +1,14 @@
+<script setup lang="ts">
+import {onMounted} from 'vue'
+
+onMounted(() => {
+   document.getElementById("skjold")?.setAttribute("viewBox", "0 0 210 297")
+})
+</script>
 
 <template>
   <div class="loader">
-      <svg class="w-screen h-screen" viewbox="0 0 210 297">
+      <svg id="skjold" viewbox="0 0 210 297" class="w-100 h-screen">
         <path
          id="path847"
          style="fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.03527778"
