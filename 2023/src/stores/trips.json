@@ -44,26 +44,33 @@
       ]
     },
     {
-      "teamName": "kobenhavn",
+      "teamName": "pno",
       "tour": [
         {
-          "comment": " // Rosenborg",
+          "comment": " // en route = 3",
           "type": "location",
-          "position": [55.68556650775494, 12.577473486625404],
+          "position": [55.67198147552365, 12.588893145161748],
           "accuracy": 1,
-          "info": "Så er vi igang"
+          "info": "There we go. <br />🤩 + 🤩 + 🤩 = 9"
+        },
+        {
+          "comment": " // the corner = 9",
+          "type": "location",
+          "position": [55.671773171323416, 12.589249531296849],
+          "accuracy": 1,
+          "info": "Nice. <br />🤩 + 🤩 + 🤠 = 15"
+        },
+        {
+          "comment": " // the bench",
+          "type": "location",
+          "position": [55.671497333276626, 12.588895054439753],
+          "accuracy": 1,
+          "info": "Last bit. <br />🤩 + 🤠 = 🤪"
         },
         {
           "type": "code",
           "code": "aGVqbWVkZGln",
-          "info": "Go go go"
-        },
-        {
-          "comment": " // KBH Lufthavn",
-          "type": "location",
-          "position": [55.617791985253035, 12.649298745974447],
-          "accuracy": 1,
-          "info": "Flot, næste!"
+          "info": "You win!"
         }
       ]
     }
