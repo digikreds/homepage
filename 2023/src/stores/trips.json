@@ -73,6 +73,161 @@
           "info": "You win!"
         }
       ]
+    },
+    {
+      "teamName": "gruppe1",
+      "tour": [
+        {
+          "comment": "Første post",
+          "type": "location",
+          "position": [55.92135997315023, 11.902402795990056],
+          "accuracy": 5,
+          "info": "Har I samlet stumpen op? 🎉<br />Næste stop kulhuse havn - Gå forsigtigt"
+        },
+        {
+          "comment": "Kulhuse havn",
+          "type": "location",
+          "position": [55.93581002041713, 11.90704198001942],
+          "accuracy": 5,
+          "info": "Tak! Så tager i færgen over til sølager.🛳️<br />Hvis I sidder fast, så vent evt på de andre patruljer"
+        },
+        {
+          "type": "code",
+          "code": "soltegn",
+          "info": "Så er I godt på vej 🚀"
+        },
+        {
+          "comment": "Soltegn-arm",
+          "type": "location",
+          "position": [55.948378543962455, 11.888225271851075],
+          "accuracy": 1,
+          "info": "I kan nu lægge Appen væk - god fornøjelse med resten af turen 🙏💪"
+        }
+      ]
+    },
+    {
+      "teamName": "gruppe2",
+      "tour": [
+        {
+          "comment": "Første post",
+          "type": "location",
+          "position": [55.91939502843819, 11.91621760642303],
+          "accuracy": 5,
+          "info": "Har I samlet stumpen op? 🎉<br />Næste stop kulhuse havn - Gå forsigtigt"
+        },
+        {
+          "comment": "Kulhuse havn",
+          "type": "location",
+          "position": [55.93581002041713, 11.90704198001942],
+          "accuracy": 5,
+          "info": "Tak! Så tager i færgen over til sølager.🛳️<br />Hvis I sidder fast, så vent evt på de andre patruljer"
+        },
+        {
+          "type": "code",
+          "code": "soltegn",
+          "info": "Så er I godt på vej 🚀"
+        },
+        {
+          "comment": "Soltegn-arm",
+          "type": "location",
+          "position": [55.947647957935025, 11.88521396224518],
+          "accuracy": 1,
+          "info": "I kan nu lægge Appen væk - god fornøjelse med resten af turen 🙏💪"
+        }
+      ]
+    },
+    {
+      "teamName": "gruppe3",
+      "tour": [
+        {
+          "comment": "Første post",
+          "type": "location",
+          "position": [55.91887433682922, 11.911947315004547],
+          "accuracy": 5,
+          "info": "Har I samlet stumpen op? 🎉<br />Næste stop kulhuse havn - Gå forsigtigt"
+        },
+        {
+          "comment": "Kulhuse havn",
+          "type": "location",
+          "position": [55.93581002041713, 11.90704198001942],
+          "accuracy": 5,
+          "info": "Tak! Så tager i færgen over til sølager.🛳️<br />Hvis I sidder fast, så vent evt på de andre patruljer"
+        },
+        {
+          "type": "code",
+          "code": "soltegn",
+          "info": "Så er I godt på vej 🚀"
+        },
+        {
+          "comment": "Soltegn-arm",
+          "type": "location",
+          "position": [55.94663171247709, 11.890854516230029],
+          "accuracy": 1,
+          "info": "I kan nu lægge Appen væk - god fornøjelse med resten af turen 🙏💪"
+        }
+      ]
+    },
+    {
+      "teamName": "gruppe4",
+      "tour": [
+        {
+          "comment": "Første post",
+          "type": "location",
+          "position": [55.92042535192439, 11.908109734647208],
+          "accuracy": 5,
+          "info": "Har I samlet stumpen op? 🎉<br />Næste stop kulhuse havn - Gå forsigtigt"
+        },
+        {
+          "comment": "Kulhuse havn",
+          "type": "location",
+          "position": [55.93581002041713, 11.90704198001942],
+          "accuracy": 5,
+          "info": "Tak! Så tager i færgen over til sølager.🛳️<br />Hvis I sidder fast, så vent evt på de andre patruljer"
+        },
+        {
+          "type": "code",
+          "code": "soltegn",
+          "info": "Så er I godt på vej 🚀"
+        },
+        {
+          "comment": "Soltegn-arm",
+          "type": "location",
+          "position": [55.94596809569904, 11.888373349978767],
+          "accuracy": 1,
+          "info": "I kan nu lægge Appen væk - god fornøjelse med resten af turen 🙏💪"
+        }
+      ]
+    },
+    {
+      "teamName": "jomsborg",
+      "tour": [
+        {
+          "comment": "Bjørnebo",
+          "type": "location",
+          "position": [55.91296269449293, 11.912159442816053],
+          "accuracy": 5,
+          "info": "Nu skal der tælles bjørne. Scan koden med det rigtige antal."
+        },
+        {
+          "type": "code",
+          "code": "seksbjorne",
+          "info": "Så er I godt på vej 🚀"
+        },
+        {
+          "comment": "Badeflaget",
+          "type": "location",
+          "position": [55.91263868334098, 11.910946941604172],
+          "accuracy": 5,
+          "info": "--./---/-../-/.//.../../-../.../-/.//.--./---/.../-//-./..-/.//"
+        },
+        {
+          "comment": "Flagbastionen",
+          "type": "location",
+          "position": [55.91355571522604, 11.911356591461242],
+          "accuracy": 5,
+          "info": "Godt gået. Tak for at I legede med 🙏💪"
+        }
+      ]
     }
   ]
 }
