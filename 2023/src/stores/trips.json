@@ -1,80 +1,6 @@
 {
   "trips": [
     {
-      "teamName": "morten",
-      "tour": [
-        {
-          "comment": " // For enden af vejen",
-          "type": "location",
-          "position": [55.83586804837251, 12.270102782277808],
-          "accuracy": 1,
-          "info": "Flot, næste!"
-        },
-        {
-          "comment": " // Ved huset",
-          "type": "location",
-          "position": [55.83636084800567, 12.270125653891546],
-          "accuracy": 1,
-          "info": "Færdig!"
-        }
-      ]
-    },
-    {
-      "teamName": "nicolai",
-      "tour": [
-        {
-          "comment": " // Huset",
-          "type": "location",
-          "position": [55.842562197746624, 12.425962888091409],
-          "accuracy": 10,
-          "info": "<b>TADA</b> Så er vi igang 🎉"
-        },
-        {
-          "type": "code",
-          "code": "aGVqbWVkZGln",
-          "info": "Go go go"
-        },
-        {
-          "comment": " // Skolevej",
-          "type": "location",
-          "position": [55.842241038500816, 12.42550192368334],
-          "accuracy": 1,
-          "info": "Flot, næste!"
-        }
-      ]
-    },
-    {
-      "teamName": "pno",
-      "tour": [
-        {
-          "comment": " // en route = 3",
-          "type": "location",
-          "position": [55.67198147552365, 12.588893145161748],
-          "accuracy": 1,
-          "info": "There we go. <br />🤩 + 🤩 + 🤩 = 9"
-        },
-        {
-          "comment": " // the corner = 9",
-          "type": "location",
-          "position": [55.671773171323416, 12.589249531296849],
-          "accuracy": 1,
-          "info": "Nice. <br />🤩 + 🤩 + 🤠 = 15"
-        },
-        {
-          "comment": " // the bench",
-          "type": "location",
-          "position": [55.671497333276626, 12.588895054439753],
-          "accuracy": 1,
-          "info": "Last bit. <br />🤩 + 🤠 = 🤪"
-        },
-        {
-          "type": "code",
-          "code": "aGVqbWVkZGln",
-          "info": "You win!"
-        }
-      ]
-    },
-    {
       "teamName": "gruppe1",
       "tour": [
         {
@@ -226,6 +152,44 @@
           "position": [55.91355571522604, 11.911356591461242],
           "accuracy": 5,
           "info": "Godt gået. Tak for at I legede med 🙏💪"
+        }
+      ]
+    },
+    {
+      "teamName": "rysen-test",
+      "tour": [
+        {
+          "comment": "VesterVoldgade",
+          "type": "location",
+          "position": [55.672570566800374, 12.576609775964062],
+          "accuracy": 5,
+          "info": "Der er billetter i DAC til jer. God fornøjelse 🙏💪 Find posten"
+        },
+        {
+          "type": "code",
+          "code": "ellevetrin",
+          "info": "Rigtigt 🚀 - Så skal I videre"
+        },
+        {
+          "comment": "Vaskemaskine",
+          "type": "location",
+          "position": [55.67087883941791, 12.581396432408642],
+          "accuracy": 5,
+          "info": "Hvor høj er vaskemaskinen?"
+        },
+        {
+          "comment": "Langebro",
+          "type": "location",
+          "position": [55.66974075737743, 12.579898652842163],
+          "accuracy": 10,
+          "info": "Hvor mange meter er der fra Langebro til Christiansborg?"
+        },
+        {
+          "comment": "Legepladsen",
+          "type": "location",
+          "position": [55.67113824230908, 12.578219868202702],
+          "accuracy": 5,
+          "info": "Hvor mange gynger er der på legepladsen? Så skal i hjem 🎉"
         }
       ]
     }

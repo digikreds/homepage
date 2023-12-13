@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Offline Code</title>
+  <link rel="stylesheet" href="stylesheet.css">
+<style>
+  #output {
+    font-family: 'EPTA';
+    font-weight: normal;
+    font-style: normal;
+
+    font-size: 3em;
+  }
+
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .w100 { width: 100%;}
+  .h40 { height: 40vh;}
+  .mb20 { padding-bottom: 20px;}
+</style>
+</head>
+<body>
+  <!--
+  KIRKE
+  ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+  EIKKR
+
+
+et de forste er eik
+
+to de sidste er rk
+
+tre det forste skal vaere sidst
+
+fire byt forste og andet bogstav
+
+-----
+eikrk -> ikrke -> kirke
+
+
+  -->
+  <div class="container">
+  <textarea id="code" class="w100 h40 mb20"></textarea>
+  <div id="output" class="h40 mb20"></div>
+</div>
+  <script>
+// When document is ready
+document.addEventListener('DOMContentLoaded', function() {
+  const code = document.getElementById('code');
+  const output = document.getElementById('output');
+
+  code.addEventListener('keyup', function() {
+    output.innerText = code.value;
+    //output.innerHTML = code.value;
+  });  
+});
+
+    
+  </script>
+</body>
+</html>
