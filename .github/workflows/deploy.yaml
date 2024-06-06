@@ -34,6 +34,9 @@ jobs:
       - name: Build 2022
         run: |
           cp -r ./2022 dist/
+      - name: Build 2024
+        run: |
+          cp -r ./2024 dist/
       - name: Build 2023
         run: |
           cd 2023
