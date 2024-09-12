@@ -111,3 +111,10 @@ https://digikreds.dk/2023/register_code?code=EXAMPLE
 
 _Time_ DENNE ER IKKE TESTET. Intentionen er at man kan have løbet på pause, eller udskyde brugen af
 appen, sådan at den først bliver relevant efter kl XX, hvorefter der så kommer en ny information.
+
+## Regn delene ud
+
+Du kommer til at skulle finde ud af et par ting
+
+* Start link: https://digikreds.dk/2023/init?route={her_skal_navnet_stå}&game= navnet du skal skrive 
+  er det du har givet som teamName da du lavede løbet. hvis du har flere grupper der skal have hver sit løb er det "bare" at lave flere links. De kan med fordel printes til qr koder.
