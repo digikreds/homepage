@@ -1,0 +1,71 @@
+{
+  "Point_order": "0=top_left, 1=top_right, 2=middle_left, 3=middle_right...",
+  "points": {
+    "top_left": [
+      "///øjeæble.vokser.robotten",
+      "///flet.femårig.vælg",
+      "///fodspor.skolebus.slippe",
+      "///kostald.mødrene.godnatkys",
+      "///opgangen.løbesko.øjesten",
+      "///blive.babymos.betaget",
+      "///striben.ånder.mandler",
+      "///ymer.værdifuld.ugentligt",
+      "///firkantede.rammerne.svedige"
+    ],
+    "top_right": [
+      "///planerne.kedel.kniven",
+      "///krystal.lejrtur.parkeret",
+      "///loyale.bagetid.sunget",
+      "///lilletå.lavet.godkendt",
+      "///kæmpe.indfødt.kostet",
+      "///mændene.bagværk.ubådene",
+      "///næste.indkast.tolkede",
+      "///spøgelse.hænderne.heks",
+      "///snehvid.trætte.skiftet"
+    ],
+    "middle_left": [
+      "///juleklip.skotøj.fætre",
+      "///mellemrum.ufærdig.udskudt",
+      "///knogler.neglene.uglerne",
+      "///hepper.hvilken.pasning",
+      "///bagning.vandglas.spisetid",
+      "///dåsen.yndigst.opfylder",
+      "///sider.hylderne.skyfrit",
+      "///flinkt.kanderne.krukke",
+      "///dykkere.fælder.aflytte"
+    ],
+    "middle_right": [
+      "///kolibri.udpege.kongen",
+      "///kløen.stænger.størrelse",
+      "///bekendt.sigt.kroppe",
+      "///ændres.kæmpede.killinger",
+      "///reklamen.hjørnet.lugtet",
+      "///artige.afvente.prinsesse",
+      "///fornemt.molen.lovligt",
+      "///bedømme.arealet.folket",
+      "///berømt.rygsæk.sønnerne"
+    ],
+    "bottom_left": [
+      "///drak.udvalgt.køkkenbord",
+      "///klikke.helbredt.gode",
+      "///køleskab.tilbyde.modne",
+      "///vikingen.slik.ruderne",
+      "///guitaren.kapitlet.afrejse",
+      "///begået.maskinen.ispind",
+      "///rafle.mapperne.partier",
+      "///opkaldet.kylling.gråzone",
+      "///krøllede.sludder.ophæves"
+    ],
+    "bottom_right": [
+      "///udskriv.varede.kræver",
+      "///fætter.blandt.skruet",
+      "///nederste.jægere.lukket",
+      "///rutinen.koglen.opkøbte",
+      "///skjulte.køleskabe.bakkerne",
+      "///brønden.spøgelse.nikkel",
+      "///albuer.knirken.vandede",
+      "///påtager.skaffer.kaster",
+      "///gløde.tælles.foldede"
+    ]
+  }
+}
