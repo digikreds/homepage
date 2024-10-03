@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	/*margin: 0;*/
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of reset.css */
+
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
+:root {
+  --font-family: "JetBrains Mono", monospace;
+  --line-height: 1.20rem;
+  --border-thickness: 2px;
+  --text-color: #000;
+  --text-color-alt: #666;
+  --background-color: #fff;
+  --background-color-alt: #eee;
+
+  --font-weight-normal: 500;
+  --font-weight-medium: 600;
+  --font-weight-bold: 800;
+
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight-normal);
+  font-style: normal;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-size: 16px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #fff;
+    --text-color-alt: #aaa;
+    --background-color: #000;
+    --background-color-alt: #111;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+* + * {
+  margin-top: var(--line-height);
+}
+
+html {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+body {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: var(--line-height) 2ch;
+  max-width: calc(min(80ch, round(down, 100%, 1ch)));
+  line-height: var(--line-height);
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+  body {
+    padding: var(--line-height) 1ch;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+  margin: calc(var(--line-height) * 2) 0 var(--line-height);
+  line-height: var(--line-height);
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: calc(2 * var(--line-height));
+  margin-bottom: calc(var(--line-height) * 2);
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+
+input, button, textarea {
+  border: var(--border-thickness) solid var(--text-color);
+  padding: 
+    calc(var(--line-height) / 2 - var(--border-thickness))
+    calc(1ch - var(--border-thickness));
+  margin: 0;
+  font: inherit;
+  font-weight: inherit;
+  height: calc(var(--line-height) * 2);
+  width: auto;
+  overflow: visible;
+  background: var(--background-color);
+  color: var(--text-color);
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
+input[type=checkbox] {
+  display: inline-grid;
+  place-content: center;
+  vertical-align: top;
+  width: 2ch;
+  height: var(--line-height);
+  cursor: pointer;
+}
+input[type=checkbox]:checked:before {
+  content: "";
+  width: 1ch;
+  height: calc(var(--line-height) / 2);
+  background: var(--text-color);
+}
+
+button:focus, input:focus {
+  --border-thickness: 3px;
+  outline: none;
+}
+
+input {
+  /* width: calc(round(down, 100%, 1ch)); */
+  width: 100%;
+}
+::placeholder {
+  color: var(--text-color-alt);
+  opacity: 1;
+}
+::-ms-input-placeholder {
+  color: var(--text-color-alt);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--background-color-alt);
+}
+button:active {
+  transform: translate(2px, 2px);
+}
+
+label {
+  display: block;
+  width: calc(round(down, 100%, 1ch));
+  height: auto;
+  line-height: var(--line-height);
+  font-weight: var(--font-weight-medium);
+  margin: 0;
+}
+
+label input {
+  width: 100%;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.slide {
+  max-width: 50vw;
+}
+
+.container {
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .slide {
+    max-width: 100%;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}
+
+.error {
+  border: 1px solid maroon;
+  background-color: deeppink firebrick;
+  background-color: crimson;
+  color: #eee;
+  padding: calc(var(--line-height) / 2 - var(--border-thickness))
+    calc(1ch - var(--border-thickness));
+}
+
+.error:empty {
+  display: none;
+}
