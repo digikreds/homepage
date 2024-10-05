@@ -1,6 +1,7 @@
 
 const password_mapping = {
-  "qr-bw96w": { password: "kagecreme", location: "qr-nogle-p1.pdf" },
+  "qr-vw96w": { password: "kagecreme", location: "qr-nogle-p1.pdf" },
+  "qr-wv96w": { password: "kagecreme", location: "qr-nogle-p1.pdf" },
   "qr-hebht": { password: "flødeskum", location: "qr-nogle-p2.pdf" },
   "qr-ow5h2": { password: "lagkagebund", location: "qr-opgave-p1.pdf" },
   "qr-z1wr1": { password: "kirsebærsovs", location: "qr-opgave-p2.pdf" },
