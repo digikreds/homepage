@@ -1,7 +1,114 @@
+<!DOCTYPE html>
 <html>
-<body>
-<h1>It works</h1>
+<head>
+  <title>Velkommen til digikreds</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  </style>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/concrete.css/3.0.0/concrete.css">
+<style>
+  * {
+    --color1: #F1D7BA;
+    --color2: #E6B188;
+    --color3: #D18080;
+    --color4: #525475;
+    --color5: #739993;
 
-<!-- hosted on github -->
+    --primary-color: var(--color4);
+    --border-color: var(--color5);
+  }
+.ubuntu-mono {
+  font-family: "Ubuntu Mono", monospace;
+  font-style: normal;
+}
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.regular { font-weight: 400; }
+.bold { font-weight: 700; }
+
+  body {
+    /* font-family: Arial, sans-serif; */
+  }
+  main { }
+  .slide {
+    height: 50vh;
+  }
+  .title {
+    color: var(--color4);
+    /* font-size: 3.4em; */
+    text-decoration: underline var(--color5);
+  }
+
+  body > header {
+    margin-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+
+  }
+
+  .hero {
+    background-color: var(--color1);
+    color: var(--color4);
+    padding: 0.3rem;
+  }
+
+  .row { display: flex; flex-direction: row;}
+  .row .column { display: block; flex: 1 1 auto; }
+</style>
+</head>
+<body>
+<header>
+  <div class="hero row">
+    <div class="column"><img src="://placeholder.com/200x200" width="100px" height="200px" /></div>
+    <div class="column">
+      <h1 class="title ubuntu-mono bold">Digikreds.dk</h1>
+      <p>Din digitale løsning til at lette arbejdsgange i det daglige kredsliv</p>
+    </div>
+</div>
+
+  <nav>
+    <ul>
+      <li><a href="#ambition">Ambition</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="slide">
+    <div class="waitlist-signup">
+      <form>
+        <fieldset>
+          <legend>Skriv dig op for at høre mere når der sker noget</legend>
+        <div class="row">
+          <input type="email" placeholder="Indtast din email">
+        </div>
+        <button type="submit">Tilmeld og hør nærmere</button>
+      </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <section id="ambition">
+    <h2>Ambition</h2>
+    <p>Ambitionen med Digikreds er at lave en fælles portal for alle kredsens ledere - hvor i dagligdags opgaver kan holdes styr på, øje med og løses til tiden</p>
+    <p>I første omgang - er målsætningen dog, lidt lavere. Vi vil i første omgang gerne skabe et community, for FDF ledere, hvor vi kan udvikle mindre værktøjer til kredsarbejdet. Eksempelvis:
+      <ul class="list-disc">
+        <li>skabelon - En samling skabeloner til indbydelse, og motor til at udfylde disse</li>
+        <li>årshjul - En opgaveoversigt, hvor vi kan se hvilke opgaver der er i kredsen</li>
+        <li>kontaktliste - En samling af kontakter til kredsen, sådan at hjemmesiden kan holdes ajour</li>
+        <li>hytten - en kalender der viser om hytten er ledig, kan sættes på hjemmesiden</li>
+      </ul>
+    </p>
+    <p>Når alle de små dele så er på plads, skal bussen køre, den sørger for at opgaven om at lave indbydelser, får de rigtige informationer, så skabelon, kan lave indbydelser for dig, og sidst, sende dem ud til medlemmerne</p>
+  </section>
+</main>
 </body>
 </html>
